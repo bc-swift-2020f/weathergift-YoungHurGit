@@ -16,6 +16,7 @@
 		EC953F4E252BCF8D003109DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC953F4C252BCF8D003109DD /* LaunchScreen.storyboard */; };
 		EC953F58252BDCF0003109DD /* WeatherLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC953F57252BDCF0003109DD /* WeatherLocation.swift */; };
 		ECDD5A2A252CD2F600C1001E /* APIkeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDD5A29252CD2F600C1001E /* APIkeys.swift */; };
+		ECF225662530EFFF0004C5CF /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF225652530EFFF0004C5CF /* LocationDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		EC953F4F252BCF8D003109DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC953F57252BDCF0003109DD /* WeatherLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLocation.swift; sourceTree = "<group>"; };
 		ECDD5A29252CD2F600C1001E /* APIkeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIkeys.swift; sourceTree = "<group>"; };
+		ECF225652530EFFF0004C5CF /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				EC953F41252BCF8C003109DD /* AppDelegate.swift */,
 				EC953F43252BCF8C003109DD /* SceneDelegate.swift */,
 				EC953F57252BDCF0003109DD /* WeatherLocation.swift */,
+				ECF225652530EFFF0004C5CF /* LocationDetailViewController.swift */,
 				EC953F45252BCF8C003109DD /* LocationListViewController.swift */,
 				EC953F47252BCF8C003109DD /* Main.storyboard */,
 				EC953F4A252BCF8D003109DD /* Assets.xcassets */,
@@ -215,6 +218,7 @@
 				EC953F58252BDCF0003109DD /* WeatherLocation.swift in Sources */,
 				ECDD5A2A252CD2F600C1001E /* APIkeys.swift in Sources */,
 				EC953F42252BCF8C003109DD /* AppDelegate.swift in Sources */,
+				ECF225662530EFFF0004C5CF /* LocationDetailViewController.swift in Sources */,
 				EC953F44252BCF8C003109DD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
