@@ -4,17 +4,17 @@
 //
 //  Created by Young Hur on 10/5/20.
 //
-// Testing
 
 import UIKit
+import GooglePlaces
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        GMSPlacesClient.provideAPIKey(APIkeys.googlePlacesKey)
+        
         return true
     }
 
