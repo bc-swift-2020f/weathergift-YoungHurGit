@@ -31,6 +31,18 @@
                                 </constraints>
                                 <items>
                                     <barButtonItem title="About" id="Dgp-CT-KTc"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="MUG-2N-g3M"/>
+                                    <barButtonItem style="plain" id="30Y-ib-V6J">
+                                        <pageControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="sIQ-ve-Q3D">
+                                            <rect key="frame" x="74" y="8" width="172" height="28"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="pageIndicatorTintColor" systemColor="systemTealColor"/>
+                                            <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="pageControlTapped:" destination="gNp-SO-3MO" eventType="valueChanged" id="QMF-ar-3g4"/>
+                                            </connections>
+                                        </pageControl>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="DT7-QJ-gES"/>
                                     <barButtonItem image="list.bullet" catalog="system" id="wRJ-Qy-sXw">
                                         <connections>
@@ -96,6 +108,7 @@
                     <connections>
                         <outlet property="dateLabel" destination="A8r-J3-wdN" id="r0t-cB-89b"/>
                         <outlet property="imageView" destination="rqA-SF-vzQ" id="e5z-H1-SRU"/>
+                        <outlet property="pageControl" destination="sIQ-ve-Q3D" id="gWt-PP-akm"/>
                         <outlet property="placeLabel" destination="WV8-rk-qmn" id="cVi-rs-ck5"/>
                         <outlet property="summaryLabel" destination="LIM-LM-ykb" id="eF9-6R-Q4W"/>
                         <outlet property="temperatureLabel" destination="JWn-SH-rv0" id="kHc-hd-X40"/>
@@ -103,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTc-da-oMc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-788" y="95.802098950524751"/>
+            <point key="canvasLocation" x="-789.375" y="95.070422535211264"/>
         </scene>
         <!--Location List View Controller-->
         <scene sceneID="tne-QT-ifu">
