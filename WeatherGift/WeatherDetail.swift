@@ -47,7 +47,7 @@ class WeatherDetail: WeatherLocation {
         let session = URLSession.shared
         
         // Get data with .dataTask method
-        let task = session.dataTask(with: url) { (data, response, error) in
+        let task = session.dataTask(with: url) { [self] (data, response, error) in
             if let error = error {
                 print("😡 ERROR: \(error.localizedDescription)")
             }
@@ -61,7 +61,7 @@ class WeatherDetail: WeatherLocation {
                 self.currentTime = result.current.dt
                 self.temperature = Int(result.current.temp.rounded())
                 self.summary = result.current.weather[0].description
-                self.dailyIcon = result.current.weather[0].icon
+                self.dailyIcon = self.fileNameForIcon(icon: result.current.weather[0].icon)
             } catch {
                 print("😡 JSON ERROR: \(error.localizedDescription)")
             }
@@ -69,5 +69,32 @@ class WeatherDetail: WeatherLocation {
         }
         
         task.resume()
+    }
+    
+    private func fileNameForIcon(icon: String) -> String {
+        var newFileName = ""
+        switch icon {
+        case "01d":
+            newFileName = "clear-day"
+        case "01n":
+            newFileName = "clear-night"
+        case "02d":
+            newFileName = "partly-cloudy-day"
+        case "02n":
+            newFileName = "partly-cloudy-night"
+        case "03d", "03n", "04d", "04n":
+            newFileName = "cloudy"
+        case "09d", "09n", "10d", "10n":
+            newFileName = "rain"
+        case "11d", "11n":
+            newFileName = "thunderstorm"
+        case "3d", "13n":
+            newFileName = "snow"
+        case "50d", "50n":
+            newFileName = "fog"
+        default:
+            newFileName = ""
+        }
+        return newFileName
     }
 }

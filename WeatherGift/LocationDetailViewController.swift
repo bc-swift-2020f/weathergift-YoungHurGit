@@ -28,8 +28,6 @@ class LocationDetailViewController: UIViewController {
         let weatherLocation = pageViewController.weatherLocations[locationIndex]
         weatherDetail = WeatherDetail(name: weatherLocation.name, latitude: weatherLocation.latitude, longitude: weatherLocation.longitude)
         
-        
-        
         pageControl.numberOfPages = pageViewController.weatherLocations.count
         pageControl.currentPage = locationIndex
         
@@ -39,6 +37,7 @@ class LocationDetailViewController: UIViewController {
                 self.placeLabel.text = self.weatherDetail.name
                 self.temperatureLabel.text = "\(self.weatherDetail.temperature)°"
                 self.summaryLabel.text = self.weatherDetail.summary
+                self.imageView.image = UIImage(named: self.weatherDetail.dailyIcon)
             }
         }
     }
