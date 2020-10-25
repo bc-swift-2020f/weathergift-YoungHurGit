@@ -19,6 +19,7 @@
 		ECA3BA5725325ADB005E4403 /* WeatherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA3BA5625325ADB005E4403 /* WeatherDetail.swift */; };
 		ECC14AF62544C2C300C98110 /* DailyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC14AF52544C2C300C98110 /* DailyTableViewCell.swift */; };
 		ECC14B192544D13A00C98110 /* HourlyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC14B182544D13A00C98110 /* HourlyCollectionViewCell.swift */; };
+		ECC14B4825460BB000C98110 /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC14B4725460BB000C98110 /* UIViewController+alert.swift */; };
 		ECDD5A2A252CD2F600C1001E /* APIkeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDD5A29252CD2F600C1001E /* APIkeys.swift */; };
 		ECF225662530EFFF0004C5CF /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF225652530EFFF0004C5CF /* LocationDetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		ECA3BA5625325ADB005E4403 /* WeatherDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetail.swift; sourceTree = "<group>"; };
 		ECC14AF52544C2C300C98110 /* DailyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTableViewCell.swift; sourceTree = "<group>"; };
 		ECC14B182544D13A00C98110 /* HourlyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyCollectionViewCell.swift; sourceTree = "<group>"; };
+		ECC14B4725460BB000C98110 /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
 		ECDD5A29252CD2F600C1001E /* APIkeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIkeys.swift; sourceTree = "<group>"; };
 		ECF225652530EFFF0004C5CF /* LocationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +106,7 @@
 				ECC14AF52544C2C300C98110 /* DailyTableViewCell.swift */,
 				ECC14B182544D13A00C98110 /* HourlyCollectionViewCell.swift */,
 				EC953F47252BCF8C003109DD /* Main.storyboard */,
+				ECC14B4725460BB000C98110 /* UIViewController+alert.swift */,
 				EC953F4A252BCF8D003109DD /* Assets.xcassets */,
 				EC953F4C252BCF8D003109DD /* LaunchScreen.storyboard */,
 				EC953F4F252BCF8D003109DD /* Info.plist */,
@@ -233,6 +236,7 @@
 				EC953F58252BDCF0003109DD /* WeatherLocation.swift in Sources */,
 				ECDD5A2A252CD2F600C1001E /* APIkeys.swift in Sources */,
 				EC953F42252BCF8C003109DD /* AppDelegate.swift in Sources */,
+				ECC14B4825460BB000C98110 /* UIViewController+alert.swift in Sources */,
 				ECF225662530EFFF0004C5CF /* LocationDetailViewController.swift in Sources */,
 				EC953F44252BCF8C003109DD /* SceneDelegate.swift in Sources */,
 				ECC14B192544D13A00C98110 /* HourlyCollectionViewCell.swift in Sources */,
